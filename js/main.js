@@ -3,8 +3,7 @@ const navLi = document.querySelectorAll("#navigation li");
 navLi.forEach((el) => {
   ["click", "touchstart"].forEach((event) => {
     el.addEventListener(
-      event,
-      () => {
+      event, () => {
         navLi.forEach((_el) => _el.classList.remove("active"));
         el.classList.add("active");
       },
