@@ -1,26 +1,37 @@
 @font-face{
   font-family:Montserrat;
   font-style:normal;
-  font-weight:400;
-  src:url(../fonts/montserrat-v14-latin-regular.eot);
-  src:local("Montserrat Regular"), local("Montserrat-Regular"), url(../fonts/montserrat-v14-latin-regular.eot?#iefix) format("embedded-opentype"), url(../fonts/montserrat-v14-latin-regular.woff2) format("woff2"), url(../fonts/montserrat-v14-latin-regular.woff) format("woff"), url(../fonts/montserrat-v14-latin-regular.ttf) format("truetype"), url(../fonts/montserrat-v14-latin-regular.svg#Montserrat) format("svg");
+  font-weight:300;
+  src:url(../fonts/Montserrat-Light.ttf);
 }
+
+@font-face{
+  font-family:Montserrat;
+  font-style:normal;
+  font-weight:400;
+  src:url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face{
+  font-family:Montserrat;
+  font-style:normal;
+  font-weight:500;
+  src:url(../fonts/Montserrat-Medium.ttf);
+}
+
 @font-face{
   font-family:Montserrat;
   font-style:normal;
   font-weight:600;
-  src:url(../fonts/montserrat-v14-latin-600.eot);
-  src:local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url(../fonts/montserrat-v14-latin-600.eot?#iefix) format("embedded-opentype"), url(../fonts/montserrat-v14-latin-600.woff2) format("woff2"), url(../fonts/montserrat-v14-latin-600.woff) format("woff"), url(../fonts/montserrat-v14-latin-600.ttf) format("truetype"), url(../fonts/montserrat-v14-latin-600.svg#Montserrat) format("svg");
+  src:url(../fonts/Montserrat-SemiBold.ttf);
 }
+
 @font-face{
   font-family:Montserrat;
   font-style:normal;
   font-weight:700;
-  src:url(../fonts/montserrat-v14-latin-700.eot);
-  src:local("Montserrat Bold"), local("Montserrat-Bold"), url(../fonts/montserrat-v14-latin-700.eot?#iefix) format("embedded-opentype"), url(../fonts/montserrat-v14-latin-700.woff2) format("woff2"), url(../fonts/montserrat-v14-latin-700.woff) format("woff"), url(../fonts/montserrat-v14-latin-700.ttf) format("truetype"), url(../fonts/montserrat-v14-latin-700.svg#Montserrat) format("svg");
+  src:url(../fonts/Montserrat-Bold.ttf);
 }
-
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html{
   line-height:1.15;
   -webkit-text-size-adjust:100%;
@@ -159,6 +170,7 @@ summary{
 
 html{
   scroll-behavior:smooth;
+  overflow-x:hidden;
 }
 
 body{
@@ -201,6 +213,24 @@ h1,h2,h3{
   .section__title{
     font-size:18px;
     line-height:23px;
+  }
+}
+
+@-webkit-keyframes a{
+  0%{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+@keyframes a{
+  0%{
+    opacity:0;
+  }
+  to{
+    opacity:1;
   }
 }
 
@@ -286,13 +316,13 @@ h1,h2,h3{
   color:#fff;
 }
 
-.banner__text h1,.banner__text h3{
+.banner__text h2,.banner__text h3{
   font-size:36px;
   line-height:23px;
   margin:0;
 }
 
-.banner__text h1{
+.banner__text h2{
   font-weight:600;
   margin-bottom:29px;
 }
@@ -330,6 +360,16 @@ h1,h2,h3{
     height:auto;
     padding-top:137px;
     padding-bottom:35px;
+    padding-left:26px;
+  }
+  .banner__text h2{
+    margin-bottom:4px;
+  }
+  .banner__text h2,.banner__text h3{
+    font-size:18px;
+  }
+  .banner__text .bold:after{
+    height:19px;
   }
 }
 
@@ -340,24 +380,30 @@ h1,h2,h3{
 
 .top__text h1{
   margin:0 0 25px;
-  font-weight:600;
+  font-weight:400;
   font-size:36px;
   line-height:44px;
   text-align:center;
+}
+
+.top__text h1 .colored{
+  color:#c08c4d;
+  font-weight:700;
 }
 
 .top__text p{
   display:block;
   max-width:1126px;
   margin:0 auto;
-  font-weight:400;
-  font-size:18px;
+  font-weight:300;
+  font-size:19px;
   line-height:32px;
   text-align:center;
 }
 
-.top__text .colored{
+.top__text p .colored{
   color:#c08c4d;
+  font-weight:700;
 }
 
 @media screen and (max-width:690px){
@@ -401,12 +447,11 @@ h1,h2,h3{
           flex:1 460px;
   -ms-flex-negative:0;
       flex-shrink:0;
-  position:relative;
-  z-index:1;
 }
 
-.choice__item-image img{
-  z-index:1;
+.choice__item-image,.choice__item-image img{
+  position:relative;
+  z-index:2;
 }
 
 .choice__item-image:after{
@@ -418,13 +463,13 @@ h1,h2,h3{
   background-color:#c08c4d;
   left:-10px;
   top:136px;
-  z-index:-1;
+  z-index:1;
 }
 
 .choice__item-data{
   width:100%;
   font-weight:600;
-  font-size:18px;
+  font-size:16px;
   line-height:23px;
   margin-left:56px;
 }
@@ -519,6 +564,11 @@ h1,h2,h3{
   border:2px solid #c08c4d;
 }
 
+.tabs__tab.tabs__active .tabs__content{
+  -webkit-animation:a 1.5s;
+          animation:a 1.5s;
+}
+
 .tabs__tab:not(.tabs__active){
   display:none;
 }
@@ -529,11 +579,12 @@ h1,h2,h3{
       flex-shrink:0;
 }
 
-.tabs__nav div{
+.tabs__nav-item,.tabs__nav div{
   cursor:pointer;
 }
 
 .tabs__nav-item{
+  display:block;
   padding:11px 21px 12px 23px;
   font-weight:400;
   font-size:16px;
@@ -541,6 +592,8 @@ h1,h2,h3{
   color:#000;
   height:67px;
   background-color:#f7f7f7;
+  -webkit-transition:background-color .3s;
+  transition:background-color .3s;
 }
 
 .tabs__nav-item .bold{
@@ -677,9 +730,9 @@ h1,h2,h3{
           justify-content:space-between;
   color:#fff;
   font-weight:700;
-  font-size:14px;
+  font-size:16px;
   line-height:29px;
-  height:175px;
+  min-height:175px;
 }
 
 .contacts__item-text .bold{
@@ -699,16 +752,17 @@ h1,h2,h3{
 }
 
 @media screen and (max-width:690px){
-  .contacts{
-    margin-top:37px;
+  .contacts .container{
+    padding-left:0;
+    padding-right:0;
   }
-  .contacts .section__title{
+  .section__title{
     margin-bottom:32px;
   }
-  .contacts .phone{
+  .phone{
     min-height:111px;
   }
-  .contacts .mail{
+  .mail{
     min-height:114px;
   }
   .contacts__inner{
@@ -727,14 +781,26 @@ h1,h2,h3{
     padding-top:15px;
     padding-bottom:15px;
   }
-  .contacts__item div:last-child{
-    margin-top:20px;
+  .contacts__item.mail .contacts__item-text,.contacts__item.phone .contacts__item-text{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
   }
   .contacts__item .icon{
     display:none;
   }
   .contacts__item-text{
     height:auto;
+    margin-top:0;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+  }
+}
+
+@media screen and (max-width:690px){
+  .contacts{
+    margin-top:37px;
   }
 }
 
@@ -755,7 +821,7 @@ h1,h2,h3{
 }
 
 .bottom__text-content p{
-  font-weight:400;
+  font-weight:300;
   font-size:14px;
   margin-bottom:20px;
 }
@@ -786,7 +852,7 @@ h1,h2,h3{
 }
 
 .footer__content,.footer__content h1{
-  font-size:18px;
+  font-size:13px;
 }
 
 .footer__content p{

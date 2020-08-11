@@ -3,7 +3,8 @@ const navLi = document.querySelectorAll("#navigation li");
 navLi.forEach((el) => {
   ["click", "touchstart"].forEach((event) => {
     el.addEventListener(
-      event, () => {
+      event,
+      () => {
         navLi.forEach((_el) => _el.classList.remove("active"));
         el.classList.add("active");
       },
@@ -18,3 +19,5 @@ new ML.Tabs(".tabs", {
   nav_item_class: "tabs__nav-item",
   active_class: "tabs__active",
 });
+
+AOS.init();

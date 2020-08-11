@@ -7,6 +7,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
     <title>taniobudujemy.pl</title>
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
@@ -15,7 +16,8 @@
         <div class="header__inner">
           <a class="header__logo" href="#">
             <img
-              src="images/logo.png"
+              class="lazyload"
+              data-src="images/logo.png"
               srcset="images/logo@2x.png 2x"
               alt="Urbas"
             />
@@ -38,7 +40,7 @@
           style="background-image: url(images/banner.jpg);"
         >
           <div class="banner__text">
-            <h1>Domy z drewna</h1>
+            <h2>Domy z drewna</h2>
             <h3>Już od <span class="bold">19 900 zł</span></h3>
           </div>
         </div>
@@ -64,19 +66,28 @@
       </div>
     </section>
     <section class="choice" id="choice">
-      <h1 class="section__title">
+      <h2 class="section__title">
         <span class="colored">Dlaczego warto</span> wybrać naszą ofertę?
-      </h1>
+      </h2>
       <div class="choice__content">
         <div class="choice__item">
-          <div class="choice__item-image">
+          <div
+            class="choice__item-image"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
             <img
-              src="images/choice-1.jpg"
-              srcset="images/choice-1@2x.jpg 2x"
+              class="lazyload"
+              data-src="images/choice-1.png"
+              srcset="images/choice-1@2x.png 2x"
               alt="Choice 1"
             />
           </div>
-          <div class="choice__item-data">
+          <div
+            class="choice__item-data"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          >
             <h3>Wieloletnie doświadczenie w produkcji wyrobów z drewna !</h3>
             <p>
               Od wielu lat zajmujemy się produkcją wyrobów z drewna. Nasi
@@ -103,14 +114,23 @@
           </div>
         </div>
         <div class="choice__item">
-          <div class="choice__item-image">
+          <div
+            class="choice__item-image"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          >
             <img
-              src="images/choice-2.jpg"
-              srcset="images/choice-2@2x.jpg 2x"
+              class="lazyload"
+              data-src="images/choice-2.png"
+              srcset="images/choice-2@2x.png 2x"
               alt="Choice 2"
             />
           </div>
-          <div class="choice__item-data">
+          <div
+            class="choice__item-data"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
             <h3>Fachowe doradztwo i uczciwe warunki współpracy !</h3>
             <p>
               Znamy życie i szanujemy pieniądze naszych Klientów, na które tak
@@ -144,11 +164,11 @@
       </div>
     </section>
     <section class="offers" id="offers">
-      <h1 class="section__title">
+      <h2 class="section__title">
         Co możemy <span class="colored">zaoferować?</span>
-      </h1>
+      </h2>
       <div class="offers__content">
-        <div class="tabs">
+        <div class="tabs" data-aos="zoom-in-up" data-aos-duration="1000">
           <div
             class="tabs__tab"
             data-title="<span class='bold'>Domy drewniane</span> do samodzielnego montażu"
@@ -156,7 +176,8 @@
             <div class="tabs__content">
               <div class="tabs__image">
                 <img
-                  src="images/tab-1.jpg"
+                  class="lazyload"
+                  data-src="images/tab-1.jpg"
                   srcset="images/tab-1@2x.jpg 2x"
                   alt="House 1"
                 />
@@ -164,7 +185,8 @@
               </div>
               <div class="tabs__image">
                 <img
-                  src="images/tab-2.jpg"
+                  class="lazyload"
+                  data-src="images/tab-2.jpg"
                   srcset="images/tab-2@2x.jpg 2x"
                   alt="House 2"
                 />
@@ -172,7 +194,8 @@
               </div>
               <div class="tabs__image">
                 <img
-                  src="images/tab-3.jpg"
+                  class="lazyload"
+                  data-src="images/tab-3.jpg"
                   srcset="images/tab-3@2x.jpg 2x"
                   alt="House 3"
                 />
@@ -180,7 +203,8 @@
               </div>
               <div class="tabs__image">
                 <img
-                  src="images/tab-4.jpg"
+                  class="lazyload"
+                  data-src="images/tab-4.jpg"
                   srcset="images/tab-4@2x.jpg 2x"
                   alt="House 4"
                 />
@@ -188,7 +212,8 @@
               </div>
               <div class="tabs__image">
                 <img
-                  src="images/tab-5.jpg"
+                  class="lazyload"
+                  data-src="images/tab-5.jpg"
                   srcset="images/tab-5@2x.jpg 2x"
                   alt="House 5"
                 />
@@ -204,7 +229,8 @@
             <div class="tabs__content">
               <div class="tabs__image">
                 <img
-                  src="images/tab-1.jpg"
+                  class="lazyload"
+                  data-src="images/tab-1.jpg"
                   srcset="images/tab-1@2x.jpg 2x"
                   alt="House 1"
                 />
@@ -212,7 +238,8 @@
               </div>
               <div class="tabs__image">
                 <img
-                  src="images/tab-5.jpg"
+                  class="lazyload"
+                  data-src="images/tab-5.jpg"
                   srcset="images/tab-5@2x.jpg 2x"
                   alt="House 5"
                 />
@@ -220,7 +247,8 @@
               </div>
               <div class="tabs__image">
                 <img
-                  src="images/tab-2.jpg"
+                  class="lazyload"
+                  data-src="images/tab-2.jpg"
                   srcset="images/tab-2@2x.jpg 2x"
                   alt="House 2"
                 />
@@ -228,7 +256,8 @@
               </div>
               <div class="tabs__image">
                 <img
-                  src="images/tab-3.jpg"
+                  class="lazyload"
+                  data-src="images/tab-3.jpg"
                   srcset="images/tab-3@2x.jpg 2x"
                   alt="House 3"
                 />
@@ -236,7 +265,8 @@
               </div>
               <div class="tabs__image">
                 <img
-                  src="images/tab-4.jpg"
+                  class="lazyload"
+                  data-src="images/tab-4.jpg"
                   srcset="images/tab-4@2x.jpg 2x"
                   alt="House 4"
                 />
@@ -252,7 +282,8 @@
             <div class="tabs__content">
               <div class="tabs__image">
                 <img
-                  src="images/tab-1.jpg"
+                  class="lazyload"
+                  data-src="images/tab-1.jpg"
                   srcset="images/tab-1@2x.jpg 2x"
                   alt="House 1"
                 />
@@ -260,7 +291,8 @@
               </div>
               <div class="tabs__image">
                 <img
-                  src="images/tab-2.jpg"
+                  class="lazyload"
+                  data-src="images/tab-2.jpg"
                   srcset="images/tab-2@2x.jpg 2x"
                   alt="House 2"
                 />
@@ -268,7 +300,8 @@
               </div>
               <div class="tabs__image">
                 <img
-                  src="images/tab-5.jpg"
+                  class="lazyload"
+                  data-src="images/tab-5.jpg"
                   srcset="images/tab-5@2x.jpg 2x"
                   alt="House 5"
                 />
@@ -276,7 +309,8 @@
               </div>
               <div class="tabs__image">
                 <img
-                  src="images/tab-3.jpg"
+                  class="lazyload"
+                  data-src="images/tab-3.jpg"
                   srcset="images/tab-3@2x.jpg 2x"
                   alt="House 3"
                 />
@@ -284,7 +318,8 @@
               </div>
               <div class="tabs__image">
                 <img
-                  src="images/tab-4.jpg"
+                  class="lazyload"
+                  data-src="images/tab-4.jpg"
                   srcset="images/tab-4@2x.jpg 2x"
                   alt="House 4"
                 />
@@ -300,7 +335,8 @@
             <div class="tabs__content">
               <div class="tabs__image">
                 <img
-                  src="images/tab-1.jpg"
+                  class="lazyload"
+                  data-src="images/tab-1.jpg"
                   srcset="images/tab-1@2x.jpg 2x"
                   alt="House 1"
                 />
@@ -308,7 +344,8 @@
               </div>
               <div class="tabs__image">
                 <img
-                  src="images/tab-3.jpg"
+                  class="lazyload"
+                  data-src="images/tab-3.jpg"
                   srcset="images/tab-3@2x.jpg 2x"
                   alt="House 3"
                 />
@@ -316,7 +353,8 @@
               </div>
               <div class="tabs__image">
                 <img
-                  src="images/tab-2.jpg"
+                  class="lazyload"
+                  data-src="images/tab-2.jpg"
                   srcset="images/tab-2@2x.jpg 2x"
                   alt="House 2"
                 />
@@ -324,7 +362,8 @@
               </div>
               <div class="tabs__image">
                 <img
-                  src="images/tab-5.jpg"
+                  class="lazyload"
+                  data-src="images/tab-5.jpg"
                   srcset="images/tab-5@2x.jpg 2x"
                   alt="House 5"
                 />
@@ -332,7 +371,8 @@
               </div>
               <div class="tabs__image">
                 <img
-                  src="images/tab-4.jpg"
+                  class="lazyload"
+                  data-src="images/tab-4.jpg"
                   srcset="images/tab-4@2x.jpg 2x"
                   alt="House 4"
                 />
@@ -345,14 +385,18 @@
     </section>
     <section class="contacts" id="contacts">
       <div class="container">
-        <h3 class="section__title">
+        <h2 class="section__title">
           Jak się z nami <span class="colored">skontaktować?</span>
-        </h3>
+        </h2>
         <div class="contacts__content">
           <div class="contacts__inner">
-            <div class="contacts__item place">
+            <div
+              class="contacts__item place"
+              data-aos="flip-left"
+              data-aos-duration="1500"
+            >
               <span class="icon"
-                ><img src="images/place.svg" alt="Place"
+                ><img class="lazyload" data-src="images/place.svg" alt="Place"
               /></span>
               <div class="contacts__item-text">
                 <div>
@@ -366,9 +410,13 @@
                 </div>
               </div>
             </div>
-            <div class="contacts__item clock">
+            <div
+              class="contacts__item clock"
+              data-aos="flip-up"
+              data-aos-duration="1500"
+            >
               <span class="icon"
-                ><img src="images/clock.svg" alt="Clock"
+                ><img class="lazyload" data-src="images/clock.svg" alt="Clock"
               /></span>
               <div class="contacts__item-text">
                 <div>
@@ -382,17 +430,27 @@
                 </div>
               </div>
             </div>
-            <div class="contacts__item phone">
+            <div
+              class="contacts__item phone"
+              data-aos="flip-right"
+              data-aos-duration="1500"
+            >
               <span class="icon"
-                ><img src="images/phone.svg" alt="Phone"
+                ><img class="lazyload" data-src="images/phone.svg" alt="Phone"
               /></span>
               <div class="contacts__item-text">
                 <h3>NUMER TELEFONU</h3>
                 <p><a href="tel:+48606993639">+ 48 606 993 639</a></p>
               </div>
             </div>
-            <div class="contacts__item mail">
-              <span class="icon"><img src="images/mail.svg" alt="Mail" /></span>
+            <div
+              class="contacts__item mail"
+              data-aos="flip-down"
+              data-aos-duration="1500"
+            >
+              <span class="icon"
+                ><img class="lazyload" data-src="images/mail.svg" alt="Mail"
+              /></span>
               <div class="contacts__item-text">
                 <h3>ADRES EMAIL</h3>
                 <p>
@@ -445,14 +503,16 @@
       <div class="container">
         <div class="footer__content">
           <div>
-            <h1>Wszelkie prawa zastrzerzone - taniobudujemy.pl</h1>
+            <h3>Wszelkie prawa zastrzerzone - taniobudujemy.pl</h3>
             <p>kopiowanie i rozpowszechnianie treści zabronione</p>
           </div>
           <p>ⓒCopywright 2020</p>
         </div>
       </div>
     </footer>
+    <script src="js/libs/lazysizes.min.js"></script>
     <script src="js/libs/tabs-standalone.microlib-2.1.0.min.js"></script>
+    <script src="js/libs/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
