@@ -21,3 +21,12 @@ new ML.Tabs(".tabs", {
 });
 
 AOS.init();
+
+const $firstImage = $(".first-image");
+
+$(".product__image").on("click", function () {
+  if ($(this).hasClass("first-image")) return;
+  const $img = $(this).find("img").clone();
+  $firstImage.find("img").replaceWith($img);
+  $firstImage.find("a").attr("href", $(this).find("a").attr("href"));
+});
